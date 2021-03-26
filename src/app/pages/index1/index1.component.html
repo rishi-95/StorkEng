@@ -1,0 +1,122 @@
+<!-- STRAT NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky sticky-dark">
+  <div class="container">
+    <!-- LOGO -->
+    <a class="navbar-brand logo text-uppercase" href="/">
+      <img src="assets/images/logo.png" alt="logo-img" class="mx-auto img-fluid d-block">
+      <!-- <i class="mdi mdi-alien"></i>StorkEng -->
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <i class="mdi mdi-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav navbar-center" id="mySidenav">
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'home'" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'features'" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'services'" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'about'" class="nav-link">About</a>
+        </li>
+        <!-- <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'pricing'" class="nav-link">Pricing</a>
+        </li> -->
+        <!-- <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'blog'" class="nav-link">Blog</a>
+        </li> -->
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
+          <a href="javascript: void(0);" [ngx-scroll-to]="'contact'" class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+      <div class="nav-button ml-auto">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'getquota'}">
+         
+            <a href="javascript: void(0);" [ngx-scroll-to]="'contact'" class="nav-link">   <button type="button" class="btn btn-custom navbar-btn btn-rounded">Get Quota</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END NAVBAR -->
+
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+  <!--START HOME-->
+  <section class="section bg-home home-half" id="home" data-image-src="images/bg-home.jpg">
+    <div class="bg-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-white text-center">
+          <h4 class="home-small-title">Helo, Welcome</h4>
+          <h1 class="home-title">Stork Engineering</h1>
+          <p class="padding-t-15 home-desc mx-auto">Maecenas class semper class semper sollicitudin lectus lorem
+            iaculis
+            imperdiet aliquam vehicula tempor auctor curabitur pede aenean ornare.</p>
+          <!-- <p class="play-shadow margin-l-r-auto"><a (click)="openWindowCustomClass(content)"
+              class="play-btn video-play-icon"><i class="mdi mdi-play text-center"></i></a></p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <youtube-player [videoId]="'JlvxDa7Sges'" height="450" width="780">
+      </youtube-player>
+    </div>
+  </ng-template>
+  <!--END HOME-->
+
+  <section class="section-sm bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="client-images my-3 my-md-0">
+            <img src="assets/images/clients/1.png" alt="logo-img" class="mx-auto img-fluid d-block">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="client-images my-3 my-md-0">
+            <img src="assets/images/clients/2.png" alt="logo-img" class="mx-auto img-fluid d-block">
+          </div>
+        </div>
+
+        <div class="col-md-3 ">
+          <div class="client-images my-3 my-md-0">
+            <img src="assets/images/clients/3.png" alt="logo-img" class="mx-auto img-fluid d-block">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="client-images my-3 my-md-0">
+            <img src="assets/images/clients/4.png" alt="logo-img" class="mx-auto img-fluid d-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-features></app-features>
+  <app-services></app-services>
+  <app-about></app-about>
+  <!-- <app-pricing></app-pricing> -->
+  <app-blog></app-blog>
+  <app-contact></app-contact>
+  <app-footer></app-footer>
+  <app-switcher></app-switcher>
+</div>

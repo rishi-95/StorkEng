@@ -1,0 +1,37 @@
+ <!-- Style switcher -->
+ <div id="style-switcher" [style.left]="isVisible == true ? '0px' : '-189px'">
+   <div>
+     <h3>Select your color</h3>
+     <ul class="pattern">
+       <li>
+         <a class="color1" href="javascript: void(0);" (click)="setTheme('cyan')"></a>
+       </li>
+       <li>
+         <a class="color2" href="javascript: void(0);" (click)="setTheme('red')"></a>
+       </li>
+       <li>
+         <a class="color3" href="javascript: void(0);" (click)="setTheme('green')"></a>
+       </li>
+       <li>
+         <a class="color4" href="javascript: void(0);" (click)="setTheme('pink')"></a>
+       </li>
+       <li>
+         <a class="color5" href="javascript: void(0);" (click)="setTheme('blue')"></a>
+       </li>
+       <li>
+         <a class="color6" href="javascript: void(0);" (click)="setTheme('purple')"></a>
+       </li>
+       <li>
+         <a class="color7" href="javascript: void(0);" (click)="setTheme('orange')"></a>
+       </li>
+       <li>
+         <a class="color8" href="javascript: void(0);" (click)="setTheme('yellow')"></a>
+       </li>
+     </ul>
+   </div>
+   <div class="bottom">
+     <a href="javascript: void(0);" class="settings rounded-right" (click)="ToogleMenu()"><i
+         class="mdi mdi-settings mdi-spin"></i></a>
+   </div>
+ </div>
+ <!-- end Style switcher -->
