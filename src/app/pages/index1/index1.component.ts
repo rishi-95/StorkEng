@@ -3,7 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-index1',
-  templateUrl: './index1.component.html',
+  templateUrl:'./index1.component.html',
   styleUrls: ['./index1.component.css'],
   encapsulation: ViewEncapsulation.None,
   styles: [`

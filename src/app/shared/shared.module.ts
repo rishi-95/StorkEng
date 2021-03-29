@@ -10,9 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { SwitcherComponent } from './switcher/switcher.component';
 import { ScrollspyDirective } from './scrollspy.directive';
 
+
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective],
+  declarations: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective,],
   imports: [
     CommonModule
   ],

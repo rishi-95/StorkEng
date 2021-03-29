@@ -148,7 +148,7 @@ b {
 
 .bg-overlay {
     background: #005C97;  /* fallback for old browsers */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #c2c3d8, #081f2e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.95;
     position: absolute;
     height: 100%;
