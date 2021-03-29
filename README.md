@@ -1,4 +1,4 @@
-# Hiric- Angular Landing Page Template
+# Stork Eng
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Deploy
+[Source](https://blog.bitsrc.io/deploy-your-angular-project-to-github-pages-7cbacb96f35b).
+
+
+Run `npm install -g lite-server` 
+at Starting Change Project The resultant build will be output to the dist/Storkeng folder in angular.jsom
+
+Run `ng build --watch' also 'ng build`
+
+Run `lite-server --baseDir="dist/Storkeng"`
+
+
+
+
